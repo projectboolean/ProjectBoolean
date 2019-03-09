@@ -64,10 +64,11 @@ jQuery(function($) {
 			$('.intro-text').css('top', ($('header').height() / 2 - $('.intro-text').height() / 2) + "px");
 		}
 		else {
-			$('header').height(400);
+			//;
 		}
 		if(!$('.navbar').hasClass("nav-fixed") && loaded)
 			fixed_point = $('.navbar').offset().top;
+		$('header').height('auto');
 	}
 	
 	$('.sample-button').click(function(event){
