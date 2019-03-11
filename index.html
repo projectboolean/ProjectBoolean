@@ -14,18 +14,29 @@
 	<link rel="stylesheet" type="text/css" href="css/tooltip.css">
 	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link id="main" rel="stylesheet" type="text/css" href="css/publisher.css">
+	<style>
+		body {
+			--neutralBackground: rgb(35, 35, 35);
+			--lightBackground: rgb(75, 75, 75);
+			--darkBackground: rgb(17, 17, 17);
+			--highlight1: #ff6600;
+			--highlight2: #1f053a;
+			--highlight1dark: #b52400;
+			--highlight2dark: #26002d;
+			--highlight2light: #8d0057;
+		}
+
+		::-webkit-scrollbar-track {
+			background: var(--neutralBackground);
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: var(--highlight1dark);
+		}
+	</style>
 </head>
 
-<body style="
---neutralBackground:rgb(35,35,35);
---lightBackground:rgb(75,75,75);
---darkBackground:rgb(17,17,17);
---highlight1:#ff6600;
---highlight2:#1f053a;
---highlight1dark:#b52400;
---highlight2dark:#26002d;
---highlight2light:#8d0057;
-">
+<body>
 	<div id="wrapper" class="behind" style="background-image:url('./img/openingBackground.png'); background-size:cover;">
 		<header style="background-color:var(--darkBackground); height:auto;">
 			<div style="background-image:url('./img/openingBackground.png'); background-size:cover;">
@@ -46,7 +57,7 @@
 							<span style="color:var(--highlight1)">Saturday, April 20, 2019</span> at the UW Madison. Some
 							<span style="color:var(--highlight1)">Important Details:</span>
 						</p>
-						<ul style="width:63%;margin-left:auto;margin-right:auto; font-size: 2em;">
+						<ul style="min-width:63%;margin-left:auto;margin-right:auto; font-size: 2em;">
 							<li>
 								<span style="color:var(--highlight1)">Cost: </span> Free!</li>
 							<li>
@@ -55,32 +66,30 @@
 								<span style="color:var(--highlight1)">Estimated End Time: </span>!!!!!TODO</li>
 							<li>
 								<span style="color:var(--highlight1)">Location: </span>
-								<a href="https://bit.ly/2HoKpqZ"
-								style="color:var(--highlight2light); text-decoration: underline;">
+								<a href="https://bit.ly/2HoKpqZ" style="color:var(--highlight2light); text-decoration: underline;">
 									University of Wisconsin-Madison, Computer Science Building, Room 1240</a>
 							</li>
 						</ul>
-						<a href="#book" class="scrollto btn btn-white">About The Book</a>
-						<a href="#" class="btn btn-green">Purchase eBook
-							<span class="price">$11.99</span>
+						<a href="#book" class="scrollto btn btn-white">Competition Information</a>
+						<a href="https://bit.ly/2Uo9juC" class="btn btn-green"> Register
 						</a>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<nav class="navbar navbar-default">
-			<div class="container">
+		<nav class="navbar navbar-default" style="height:auto;">
+			<div class="container" style="height:100%;">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
+				<div class="navbar-header" style="height:100%;">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">
-						<img src="img/logo.svg" alt="">
+					<a href="#" style="height:100%;">
+						<img src="./img/logo.svg" alt="" style="height:10vh; margin-top:auto;">
 					</a>
 				</div>
 
@@ -94,7 +103,7 @@
 							<a href="#reviews" class="scrollto">Sponsors</a>
 						</li>
 						<li>
-							<a href="#author" class="scrollto">Author</a>
+							<a href="#author" class="scrollto">@Author</a>
 						</li>
 						<li>
 							<a href="#contact" class="scrollto">Contact</a>
@@ -117,25 +126,25 @@
 							<img src="img/kindle.png" class="background-device" alt="">
 							<div class="owl-book">
 								<div class="item">
-									<img src="img/book_page.png" alt="">
+									<img src="img/prize1.png" alt="">
 									<div class="overlay">
-										<a href="img/book_page.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
+										<a href="img/prize1.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
 											<i class="fa fa-expand"></i>
 										</a>
 									</div>
 								</div>
 								<div class="item">
-									<img src="img/book_page.png" alt="">
+									<img src="img/prize2.png" alt="">
 									<div class="overlay">
-										<a href="img/book_page.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
+										<a href="img/prize2.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
 											<i class="fa fa-expand"></i>
 										</a>
 									</div>
 								</div>
 								<div class="item">
-									<img src="img/book_page.png" alt="">
+									<img src="img/prize3.png" alt="">
 									<div class="overlay">
-										<a href="img/book_page.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
+										<a href="img/prize3.png" class="expand" data-lightbox="book-collection" data-title="Image Caption">
 											<i class="fa fa-expand"></i>
 										</a>
 									</div>
@@ -144,15 +153,12 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<h2 class="heading wow animated fadeInUp">About The Book</h2>
-						<h4 class="subheading wow animated fadeInUp">This lovely, well-written book is concerned foremost with creating typography and is essential for professionals who
-							regularly work for clients.</h4>
-						<p class="small wow animated fadeInUp">Author writes about designing with the correct typeface; striving for rhythm, proportion, and harmony; choosing and
-							combining type; designing pages; using section heads, subheads, footnotes, and tables; applying kerning and other
-							type adjustments to improve legibility; and adding special characters, including punctuation and diacritical marks.
+						<h2 class="heading wow animated fadeInUp"> Details</h2>
+						<h4 class="subheading wow animated fadeInUp">(including prizes)</h4>
+						<p class="small wow animated fadeInUp">!!!!!TODO Put Detail and prize text here. Please also update the prize images because I don't know what we are doing
+							right now.
 						</p>
-						<p class="small wow animated fadeInUp">The Elements of Typographic Style teaches the history of and the artistic and practical perspectives on a variety of
-							type families that are available in Europe and America today.</p>
+						<p class="small wow animated fadeInUp">!!!!!TODO If you need a second paragraph, put here. Else delete paragraph HTML block</p>
 					</div>
 				</div>
 			</div>
@@ -162,8 +168,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center wow animated fadeInUp">
-						<p class="white">A few hundred years of type and typography have established rules that
-							<b>only a fool would ignore.</b>
+						<p class="white">!!!!! Put some quote here</b>
 						</p>
 					</div>
 				</div>
@@ -174,112 +179,98 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 text-left">
-						<h2 class="heading">Reviews</h2>
+						<h2 class="heading">Sponsors</h2>
 					</div>
 					<div class="col-sm-6 text-right text-left-mobile">
 						<div class="rate-amount text-right">
-							4/5
-							<span>(16 Reviews)</span>
+							<span>Three Possible Tiers</span>
 						</div>
 						<div class="rating">
 							<span class="rate active"></span>
 							<span class="rate active"></span>
 							<span class="rate active"></span>
-							<span class="rate active"></span>
-							<span class="rate"></span>
 						</div>
 					</div>
 				</div>
 				<div class="row">
+
+					<!--!!!!Templates for sponsors at teir 1, 2, and three (1 highest)-->
 					<div class="owl-reviews">
 						<div class="item">
 							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/1.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Alfred Rudolf</h4>
-								<h6 class="subheading muted reviewer-city">Dallas, Texas</h6>
+								<img src="img/logo.svg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:var(--highlight1)">Gold Sponsor Template</h4>
+								<h6 class="subheading muted reviewer-city">Your website link here!</h6>
 								<div class="rating">
 									<span class="rate active"></span>
 									<span class="rate active"></span>
 									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate"></span>
+
 								</div>
-								<p class="small">This book is an excellent resource for anyone who is serious about graphic layout.</p>
+								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+									et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+									commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+									pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+									laborum.
+								</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="review text-center wow animated fadeInUp">
+								<img src="img/logo.svg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:var(--highlight1dark)">Silver Sponsor Template</h4>
+								<h6 class="subheading muted reviewer-city">Your website link here!</h6>
+								<div class="rating">
+									<span class="rate active"></span>
+									<span class="rate active"></span>
+
+								</div>
+								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! (500 Character Limit) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+									eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+									anim id est laborum.
+								</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/2.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Emily Carey</h4>
-								<h6 class="subheading muted reviewer-city">Tampa, Florida</h6>
+								<img src="img/logo.svg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">Bronze Sponsor Template</h4>
+								<h6 class="subheading muted reviewer-city">Your website link here!</h6>
 								<div class="rating">
 									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
 								</div>
-								<p class="small">Swiss Typography is a critical guide for graphic designers. I recommend this fantastic eBook.</p>
+								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! (300 Character Limit) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/3.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Martin Doe</h4>
-								<h6 class="subheading muted reviewer-city">Los Angeles, California</h6>
+								<img src="img/logo.svg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">Bronze Sponsor Template</h4>
+								<h6 class="subheading muted reviewer-city">Your website link here!</h6>
 								<div class="rating">
 									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate"></span>
 								</div>
-								<p class="small">Chock full of great photos of lettering with a little info about the artist and projects shown.</p>
+								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! (300 Character Limit) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 						<div class="item">
 							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/1.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Alfred Rudolf</h4>
-								<h6 class="subheading muted reviewer-city">Dallas, Texas</h6>
+								<img src="img/logo.svg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">Bronze Sponsor Template</h4>
+								<h6 class="subheading muted reviewer-city">Your website link here!</h6>
 								<div class="rating">
 									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate"></span>
 								</div>
-								<p class="small">This book is an excellent resource for anyone who is serious about graphic layout.</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/3.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Emily Carey</h4>
-								<h6 class="subheading muted reviewer-city">Tampa, Florida</h6>
-								<div class="rating">
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-								</div>
-								<p class="small">Swiss Typography is a critical guide for graphic designers. I recommend this fantastic eBook.</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="review text-center wow animated fadeInUp">
-								<img src="img/reviewers/2.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name">Martin Doe</h4>
-								<h6 class="subheading muted reviewer-city">Los Angeles, California</h6>
-								<div class="rating">
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate active"></span>
-									<span class="rate"></span>
-								</div>
-								<p class="small">Chock full of great photos of lettering with a little info about the artist and projects shown.</p>
+								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! (300 Character Limit) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
@@ -296,13 +287,13 @@
 								<img src="img/author.png" alt="" class="pic">
 							</div>
 							<div class="col-sm-8 author-name">
-								<h2 class="heading wow animated fadeInUp">Nicolas Adamson</h2>
-								<h4 class="subheading muted wow animated fadeInUp">Typographer, Writer, Father...</h4>
+								<h2 class="heading wow animated fadeInUp">!!!!!Do we even want this section?</h2>
+								<h4 class="subheading muted wow animated fadeInUp">!!!!!About us isnt very important</h4>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="subheading gray wow animated fadeInUp">Good typog­raphy is measured by how well it reinforces the meaning of the text, not by some ab­stract scale of merit.</h3>
+								<h3 class="subheading gray wow animated fadeInUp">The contact page has everything we need.</h3>
 								<p class="small muted-light wow animated fadeInUp">Nullam quis risus eget urna mollis ornare vel eu leo Praesent commodo cursus magna, ligula porta felis euismod semper.l
 									nisl consectetur etonec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare
 									vel eu leo. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum
@@ -375,11 +366,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 text-left text-center-mobile wow animated fadeInUp">
-						<h2 class="heading white top-fit">Get The eBook Sample</h2>
-						<h4 class="subheading white no-margin">Join over 5,600 readers and get free sample of the book.</h4>
+						<h2 class="heading white top-fit">Hope to see you there!</h2>
 					</div>
 					<div class="col-md-4 text-right wow animated fadeInUp text-center-mobile">
-						<a href="#" class="btn btn-white sample-button">Get Free Sample</a>
+						<a href="https://bit.ly/2Uo9juC" class="btn btn-white sample-button">Sounds cool, I'm In!</a>
 					</div>
 				</div>
 			</div>
@@ -406,47 +396,30 @@
 		<section id="contact">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details">
-						<h3 class="heading no-margin wow animated fadeInUp">Contact Author</h3>
-						<h4 class="subheading muted no-margin wow animated fadeInUp">Say hi or ask something.</h4>
-						<div class="details">
-							<h6 class="heading no-margin">Nicolas Adamson</h6>
-							<p class="small muted wow animated fadeInUp no-margin">3125 Flanigan Oaks Drive
-								<br> Capitol Heights, MD 20027</p>
-						</div>
-						<div class="details">
+					<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details" style="width:100%;">
+						<h3 class="heading no-margin wow animated fadeInUp">Contact Us</h3>
+						<h4 class="subheading muted no-margin wow animated fadeInUp">Got a question? Want to sponsor?</h4>
+						<div class="details" style="text-align: center;">
+
+							<p>Should you choose to become a sponsor of Project Boolean, checks can be made out to Middleton High School (memo Project
+								Boolean) and mailed to Ben White, Student Activities Coordinator for Middleton High School:</p>
+
+							<p> Middleton High School</p>
+							<p>Attn: Ben White</p>
+							<p>2100 Bristol Street</p>
+							<p>Middleton, WI 53562</p>
+
+							<p>If you have any further questions or concerns, Project Boolean organizers David Whittingham and Tony Tu can be reached
+								at
+								<span style="color:var(--highlight1)">@gmail.com and tonytu@gmail.com</span> respectively. In addition, if you have any questions regarding the handling
+								of donation funds by Middleton High School, Student Activities Coordinator Ben White can be reached at bwhite@mcpasd.k12.wi.us.</p>
+
 							<h4 class="subheading accent no-margin wow animated fadeInUp">+ 301 324 9131
 								<br> info@nicolasadamson.com
 							</h4>
 						</div>
 					</div>
-					<form action="php/newMail.php" method="post" class="mail-form">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="col-sm-6">
-									<input name="firstname" type="text" class="form-control" placeholder="Name" data-validation="required">
-								</div>
-								<div class="col-sm-6">
-									<input name="email" type="text" class="form-control" placeholder="Email" data-validation="email">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<input name="subject" type="text" class="form-control" placeholder="Subject" data-validation="required">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12">
-									<textarea name="body" class="form-control" rows="10" placeholder="Message. . ." data-validation="required"></textarea>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-12.text-left">
-									<input type="submit" class="btn btn-green contact-button" value="Send">
-								</div>
-							</div>
-						</div>
-					</form>
+
 				</div>
 			</div>
 		</section>
@@ -455,23 +428,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 text-left text-center-mobile">
-						<p class="copyright small muted">Copyright © 2015 Bukku Template - All rights reserved!</p>
+						<p class="copyright small muted">Template: © 2015 Bukku Template
+							<p>
 					</div>
 					<div class="col-sm-6 text-right text-center-mobile">
-						<div class="social">
-							<a href="#" class="facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="#" class="twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="#" class="dribbble">
-								<i class="fa fa-dribbble"></i>
-							</a>
-							<a href="#" class="vine">
-								<i class="fa fa-vine"></i>
-							</a>
-						</div>
+
 					</div>
 				</div>
 			</div>
