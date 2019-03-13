@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#212026">
-	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<!--- Favicon Stuff -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=QEJ3Rdj7O2">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=QEJ3Rdj7O2">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=QEJ3Rdj7O2">
+	<link rel="manifest" href="/favicons/site.webmanifest?v=QEJ3Rdj7O2">
+	<link rel="shortcut icon" href="/favicons/favicon.ico?v=QEJ3Rdj7O2">
 	<meta name="apple-mobile-web-app-title" content="Project Boolean">
 	<meta name="application-name" content="Project Boolean">
-	<meta name="msapplication-TileColor" content="#bc4234">
-	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#212026">
-
+	<meta name="msapplication-TileColor" content="#000033">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml?v=QEJ3Rdj7O2">
+	<meta name="theme-color" content="#000033">
+	<!--- End of Favicon Stuff -->
 
 	<meta charset="UTF-8">
 	<title>Project Boolean</title>
@@ -33,11 +32,13 @@
 			--neutralBackground: rgb(35, 35, 35);
 			--lightBackground: rgb(75, 75, 75);
 			--darkBackground: rgb(17, 17, 17);
-			--highlight1: #ff6600;
-			--highlight2: #1f053a;
-			--highlight1dark: #b52400;
-			--highlight2dark: #26002d;
-			--highlight2light: #8d0057;
+			--highlight1: #362360;
+			--highlight2: #362360;
+			--highlight1dark: #362360;
+			--highlight2dark: #362360;
+			--highlight2light: #362360;
+            /*v real background v*/
+            --realBackground: #a6a6a6;
 		}
 
 		::-webkit-scrollbar-track {
@@ -58,13 +59,15 @@
 		}
 	</style>
 </head>
-
+<!-- #4B475E -->
 <body>
-	<div id="wrapper" class="behind" style="background-image:url('./img/openingBackground.png'); background-size:cover;">
+    <!-- BACKGROUND COLOR IS BELOW -->
+	<div id="wrapper" class="behind" style="background-color:var(--realBackground); background-size:cover;">
 		<header style="background-color:var(--darkBackground); height:auto;">
-			<div style="background-image:url('./img/openingBackground.png'); background-size:cover;">
+            <!-- BACKGROUND COLOR IS BELOW -->
+			<div style="background-color:var(--realBackground); background-size:cover;">
 				<div class="container">
-					<img src="img/logo.svg" alt="">
+					<img src="img/logo.svg" style="width:45em; margin:auto; margin-right: auto; margin-left: auto; display: block" alt="">
 					<div id="horiz-line" style="width:500px;
 						min-width: 40%; 
 						max-width:100vw;
@@ -76,24 +79,25 @@
 					<div class="">
 						<h2 class="heading" style="text-align: center; color: var(--highlight2light)">Test Your Skill
 							<span style="color:var(--highlight1);">&&</span> Have a Blast!</h2>
-						<p style="font-size:2em;"> Compete in your choice of programming language (not you, HTML) on
-							<span style="color:var(--highlight1)">Saturday, April 20, 2019</span> at the UW Madison. Some
-							<span style="color:var(--highlight1)">Important Details:</span>
+						<p style="font-size:2em;"> Compete in your choice of programming language (not you, HTM Compete in your choice of programming language (not you, HTML) on
+							<span style="color:var(--highlight1); font-weight: bold;">Saturday, April 20, 2019</span> at the UW Madison. Some
+							<span style="color:var(--highlight1); font-weight: bold;">Important Details:</span>
 						</p>
+						<b>
 						<ul style="min-width:63%;margin-left:auto;margin-right:auto; font-size: 2em;">
-							<li>
-								<span style="color:var(--highlight1)">Cost: </span> Free!</li>
-							<li>
-								<span style="color:var(--highlight1)">Start Time: </span> 1:00</li>
-							<li>
-								<span style="color:var(--highlight1)">Estimated End Time: </span> 5:00</li>
 							<li>
 								<span style="color:var(--highlight1)">Location: </span>
 								<a href="https://bit.ly/2HoKpqZ" style="color:var(--highlight2light); text-decoration: underline;">
 									University of Wisconsin-Madison, Computer Science Building, Room 1240</a>
 							</li>
+                            <li>
+								<span style="color:var(--highlight1)">Cost: </span> Free!</li>
+							<li>
+								<span style="color:var(--highlight1)">Time: </span> 1:00 - 5:00</li>
+							
 						</ul>
-						<a href="#book" class="scrollto btn btn-white">Competition Information</a>
+						</b>
+						<a href="#competition" class="scrollto btn btn-white">Competition Information</a>
 						<a href="https://bit.ly/2Uo9juC" class="btn btn-green"> Register
 						</a>
 					</div>
@@ -119,7 +123,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right main-nav">
 						<li>
-							<a href="#book" class="scrollto">About Project Boolean</a>
+							<a href="#competition" class="scrollto">About Project Boolean</a>
 						</li>
 						<li>
 							<a href="#reviews" class="scrollto">Sponsors</a>
@@ -140,7 +144,7 @@
 			<!-- /.container-fluid -->
 		</nav>
 
-		<section id="book">
+		<section id="competition">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
@@ -186,13 +190,10 @@
 					<div class="col-md-6">
 						<h2 class="heading wow animated fadeInUp"> What is Project Boolean?</h2>
 						<p class="small wow animated fadeInUp">Originally launched in fall of 2017 by students at Middleton High School, Project Boolean is a computer science competition
-							for high school students in computational puzzles, problem solving, and programming.
+							for high school students in computational puzzles, problem solving, and programming. This year, we're back for our second iteration.
 						</p>
 						<h2 class="heading wow animated fadeInUp"> How does it work?</h2>
-						<p class="small wow animated fadeInUp">The event will engage around 25 student teams representing high schools across Wisconsin in an exciting, fast-paced
-							and fun-filled competition. In a given period of time teams will have to solve a series of computational problems.
-							Teams will receive points based on how quickly and accurately they solve the challenges, and the highest-scoring teams
-							will win prizes.
+						<p class="small wow animated fadeInUp">The event will engage student teams from high schools across Wisconsin in an exciting, fast-paced and fun-filled competition. Over the course of three hours, teams will be tasked with solving a series of computational problems and will will receive points based on how quickly and accurately they solve them. The highest-scoring groups will win prizes, which can be viewed to the left.
 						</p>
 					</div>
 				</div>
@@ -203,7 +204,8 @@
 			<div class="container">
 				<div class="row">
 					<div style="text-align: center">
-						<a style="font-size: 20px; color:var(--highlight1);" href="https://madison.com/ct/news/local/education/middleton-high-school-student-hosts-statewide-computer-programming-competition/article_f7b5e517-dc66-5427-bfe2-927ad11a7490.html">Article: Project Boolean Event a Big Success</b>
+						<a style="font-size: 20px; color:var(--highlight1);" href="https://madison.com/ct/news/local/education/middleton-high-school-student-hosts-statewide-computer-programming-competition/article_f7b5e517-dc66-5427-bfe2-927ad11a7490.html">2017 Article: Project Boolean Event a Big Success</b>
+						<a style="font-size: 20px; color:var(--highlight1);" href="https://madison.com/wsj/news/local/education/local_schools/middleton-high-student-organizes-information-technology-contest/article_413b5dda-4af0-5f54-9905-2b9b388916da.html">2017 Article:  Middleton High student organizes information technology contest</b>
 						</a>
 					</div>
 				</div>
@@ -230,45 +232,53 @@
 				<div class="row">
 
 					<!--!!!!Templates for sponsors at teir 1, 2, and three (1 highest)-->
+                    <style>
+                        .sponsors {
+                            min-height:25em;
+                        }
+                        .headingLight {
+                            color:#a6a6a6;
+                        }
+                    </style>
 					<div class="owl-reviews">
 						<div class="item">
-							<div class="review text-center wow animated fadeInUp">
-								<img style="width: 100%" src="img/LogoBadger.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name" style="color:var(--highlight1dark)">BadgerBOTS</h4>
-								<h6 class="subheading muted reviewer-city">Team1306 badgerBOTS</h6>
-								<div class="rating">
+							<div class="review text-center wow animated fadeInUp sponsors">
+								<img style="height:10em" src="img/LogoBadger.png" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">BadgerBOTS</h4>
+								<h6 class="subheading muted reviewer-city">Silver Sponsor</h6>
+								<!--<div class="rating">
 									<span class="rate active"></span>
 									<span class="rate active"></span>
 
-								</div>
-								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Oof
+								</div>-->
+								<!--<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Oof-->
 								</p>
 							</div>
 						</div>
 						<div class="item">
-							<div class="review text-center wow animated fadeInUp">
-								<img style="width: 100%" src="img/AFI_Logo_BlueRed_Pres_GIF.png" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name" style="color:lightgray">Thank you American Family Insurance</h4>
-								<h6 href="https://www.amfam.com/" class="subheading muted reviewer-city">American Family Insurance</h6>
-								<div class="rating">
+							<div class="review text-center wow animated fadeInUp sponsors" style="height:100%">
+								<img style="max-height:10em; max-width:100%" src="img/AFI_Logo_BlueRed_Pres_GIF.png" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">American Family Insurance</h4>
+								<h6 href="https://www.amfam.com/" class="subheading muted reviewer-city">Bronze Sponsor</h6>
+								<!--<div class="rating">
 									<span class="rate active"></span>
-								</div>
-								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Thank you American Family Insurance, AMFAM, for your generous donations to Wisconsin's computer science community,
-									we highly appreciate it!</p>
+								</div>-->
+								<!--<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Thank you American Family Insurance, AMFAM, for your generous donations to Wisconsin's computer science community,
+									we highly appreciate it!</p> -->
 							</div>
 						</div>
 						<div class="item">
-							<div class="review text-center wow animated fadeInUp">
-								<img style="width: 100%" src="img/images.jpg" class="reviewer-pic" alt="">
-								<h4 class="subheading reviewer-name" style="color:lightgray">Thank you Singlewire Software</h4>
-								<h6 href="https://www.singlewire.com/" class="subheading muted reviewer-city">Singlewire Software</h6>
-								<div class="rating">
+							<div class="review text-center wow animated fadeInUp sponsors" style="height:100%">
+								<img style="max-height:10em;max-width:100%" src="img/images.jpg" class="reviewer-pic" alt="">
+								<h4 class="subheading reviewer-name" style="color:lightgray">Singlewire Software</h4>
+								<h6 href="https://www.singlewire.com/" class="subheading muted reviewer-city">Bronze Sponsor</h6>
+								<!--<div class="rating">
 									<span class="rate active"></span>
-								</div>
-								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">We would like to thank Singlewire Software for kindly sponsoring this competition. </p>
+								</div>-->
+								<!-- <p class="small" style="max-height:60vh; height:60vh; overflow:auto;">We would like to thank Singlewire Software for kindly sponsoring this competition. </p> -->
 							</div>
 						</div>
-						<div class="item">
+						<!--<div class="item">
 							<div class="review text-center wow animated fadeInUp">
 								<img src="img/logo.svg" class="reviewer-pic" alt="">
 								<h4 class="subheading reviewer-name" style="color:lightgray">Bronze Sponsor Template</h4>
@@ -278,7 +288,7 @@
 								</div>
 								<p class="small" style="max-height:60vh; height:60vh; overflow:auto;">Your Text Here! (300 Character Limit) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-									nisi ut aliquip ex ea commodo consequat.</p>
+									nisi ut aliquip ex ea commodo consequat.</p>-->
 							</div>
 						</div>
 					</div>
@@ -295,16 +305,16 @@
 								<img src="img/cardinal-300x293.png" alt="" class="pic">
 							</div>
 							<div class="col-sm-8 author-name">
-								<h2 class="heading wow animated fadeInUp">Project Boolean is Organzed by Middleton High School</h2>
+								<h2 class="heading wow animated fadeInUp headingLight">Project Boolean is Organzed by Middleton High School</h2>
 								<h4 class="subheading muted wow animated fadeInUp">Project Boolean Iteration II</h4>
 							</div>
 						</div>
 					</div>
 					<!-- col-md-6 author -->
 					<div class="col-md-4 col-md-offset-2">
-						<h3 class="heading wow animated fadeInUp">Our Competition will be
+						<h3 class="heading wow animated fadeInUp headingLight">Our Competition will be
 							<br> run with
-							<a style="color:whitesmoke;" href="https://www.hackerrank.com/">Hackerrank</a>
+							<a style="color:var(--highlight1)" href="https://www.hackerrank.com/">Hackerrank</a>
 						</h3>
 
 						<div class="locations">
@@ -366,16 +376,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 text-left text-center-mobile wow animated fadeInUp contact-details" style="width:100%;">
-						<h3 class="heading no-margin wow animated fadeInUp">Contact Us</h3>
-						<h4 class="subheading muted no-margin wow animated fadeInUp">Got a question? Want to sponsor?</h4>
+						<!--<h3 class="heading no-margin wow animated fadeInUp">Contact Us</h3>-->
+						<h3 class="heading wow animated fadeInUp headingLight">Got a question? Want to sponsor?</h3>
 						<div class="details" style="text-align: center;">
 
 							<p>If you have any questions or concerns about the competition, email Project Boolean at
-								<span style="color: red">
-								help@projectboolean.org</span>
-								<br>If you have any questions regarding the handling of donation funds by Middleton High School, Student Activities Coordinator
+								<span style="color:var(--highlight1)"><a style="color:#362360" href="mailto:help@projectboolean.org">
+								help@projectboolean.org</a></span>
+                            								<br>If you have any questions regarding the handling of donation funds by Middleton High School, Student Activities Coordinator
 								Ben White can be reached at
-								<span style="color:var(--highlight1)">bwhite@mcpasd.k12.wi.us</span>.</p>
+								<span style="color:var(--highlight1)"><a style="color:#362360" href="mailto:bwhite@mcpasd.k12.wi.us">bwhite@mcpasd.k12.wi.us</a></span>.
+                            </p>
 
 
 						</div>

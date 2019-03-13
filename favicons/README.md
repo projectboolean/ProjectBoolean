@@ -10,16 +10,15 @@ Extract this package in <code>&lt;web site&gt;/favicons/</code>. If your site is
 
 Insert the following code in the `head` section of your pages:
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#212026">
-    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=QEJ3Rdj7O2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=QEJ3Rdj7O2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=QEJ3Rdj7O2">
+    <link rel="manifest" href="/favicons/site.webmanifest?v=QEJ3Rdj7O2">
+    <link rel="shortcut icon" href="/favicons/favicon.ico?v=QEJ3Rdj7O2">
     <meta name="apple-mobile-web-app-title" content="Project Boolean">
     <meta name="application-name" content="Project Boolean">
-    <meta name="msapplication-TileColor" content="#bc4234">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#212026">
+    <meta name="msapplication-TileColor" content="#000033">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=QEJ3Rdj7O2">
+    <meta name="theme-color" content="#000033">
 
 *Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
