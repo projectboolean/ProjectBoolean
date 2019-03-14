@@ -14,11 +14,11 @@ html, body {
 	font-family:'Proxima';
 	overflow-x:hidden;
 	position: relative;
-	--colorBackground:#635E75;
+	--colorBackground:#585272;
 	--colorDeepBackground:#232323;
-	--colorHighlight:#4B475E;
+	--colorHighlight:#A4A0E0;
 	--colorText:#ffffff;
-	--colorBackgroundHighlight:#635E75;
+	--colorBackgroundHighlight:#9288D3;
 }
 
 html {
