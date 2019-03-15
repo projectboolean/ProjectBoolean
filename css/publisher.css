@@ -313,7 +313,7 @@ section {
 }
 
 section.call-to-action {
-	background: var(--colorBackground);
+	background: var(--colorDeepBackground);
 	padding:100px 0;
 }
 
@@ -342,7 +342,7 @@ section.reviews {
 }
 
 .btn.btn-white {
-	border:3px solid var(--colorDeepBackground);
+	border:3px solid var(--colorBackgroundHighlight);
 	background: transparent;
 	color:var(--colorText);
 }
