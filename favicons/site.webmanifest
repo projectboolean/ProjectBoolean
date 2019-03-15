@@ -3,18 +3,17 @@
     "short_name": "Project Boolean",
     "icons": [
         {
-            "src": "/favicons/android-chrome-192x192.png?v=QEJ3Rdj7O2",
+            "src": "/favicons/android-chrome-192x192.png?v=ng9K477oQo",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/favicons/android-chrome-256x256.png?v=QEJ3Rdj7O2",
-            "sizes": "256x256",
+            "src": "/favicons/android-chrome-384x384.png?v=ng9K477oQo",
+            "sizes": "384x384",
             "type": "image/png"
         }
     ],
-    "theme_color": "#000033",
-    "background_color": "#000033",
-    "start_url": "https://projectboolean.org",
+    "theme_color": "#423587",
+    "background_color": "#423587",
     "display": "standalone"
 }
